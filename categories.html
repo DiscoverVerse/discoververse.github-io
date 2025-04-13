@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Κατηγορίες - StoryVerse</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        nav {
+            background: #6C63FF;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #5548c8;
+            border-radius: 5px;
+        }
+        header {
+            padding: 3rem 1rem;
+            background: #6C63FF;
+            color: white;
+        }
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 2rem;
+        }
+        .category-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 250px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card a {
+            text-decoration: none;
+            color: #6C63FF;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 2rem;
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Αρχική</a>
+        <a href="categories.html">Κατηγορίες</a>
+        <a href="stories.html">Ιστορίες</a>
+        <a href="subscription.html">Συνδρομή</a>
+        <a href="#">Επικοινωνία</a>
+    </nav>
+
+    <header>
+        <h1>Κατηγορίες Ιστοριών</h1>
+        <p>Ανακάλυψε ιστορίες από διάφορες κατηγορίες και ταξίδεψε σε νέους κόσμους!</p>
+    </header>
+
+    <section class="category-container">
+        <div class="category-card" onclick="location.href='category-fantasy.html'">
+            <h3>📖 Φαντασία</h3>
+            <a href="category-fantasy.html">Ανακάλυψε</a>
+        </div>
+        <div class="category-card" onclick="location.href='category-scifi.html'">
+            <h3>🚀 Επιστημονική Φαντασία</h3>
+            <a href="category-scifi.html">Ανακάλυψε</a>
+        </div>
+        <div class="category-card" onclick="location.href='category-horror.html'">
+            <h3>🧛 Τρόμος</h3>
+            <a href="category-horror.html">Ανακάλυψε</a>
+        </div>
+        <div class="category-card" onclick="location.href='category-romance.html'">
+            <h3>💖 Ρομαντικές Ιστορίες</h3>
+            <a href="category-romance.html">Ανακάλυψε</a>
+        </div>
+        <div class="category-card" onclick="location.href='cat-mystery.html'">
+            <h3>🔍 Μυστηρίου</h3>
+            <a href="cat-mystery.html">Ανακάλυψε</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 StoryVerse | Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+</body>
+</html>

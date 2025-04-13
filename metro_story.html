@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Η Ομίχλη του Μετρό - StoryVerse</title>
+    
+    <style>
+        /* 🌌 Γενικά Στυλ - Dark Aesthetic */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e2e; /* Σκούρο μπλε-μωβ background */
+            color: #d1d1e9; /* Απαλό λευκό-μωβ κείμενο */
+            line-height: 1.8;
+        }
+
+        /* 🔝 Navigation Menu */
+        nav {
+            background: #6C63FF;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.7rem 1.2rem;
+            transition: background 0.3s ease, transform 0.2s ease;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background: #5548c8;
+            transform: scale(1.05);
+        }
+
+        /* 📖 Story Header */
+        .story-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #6C63FF, #3A2E8E);
+            color: white;
+        }
+
+        .story-header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .story-header .author {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+
+        /* 📜 Story Content */
+        .story-container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 1.5rem;
+            background: #2a2a3d;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .story-content p {
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+            color: #dcdcff;
+            transition: color 0.3s ease;
+        }
+
+        .story-content p:hover {
+            color: #ffffff;
+        }
+
+        /* 🔜 Επόμενο Επεισόδιο */
+        .next-episode {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .next-episode a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: #6C63FF;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .next-episode a:hover {
+            background: #5548c8;
+            transform: scale(1.08);
+        }
+
+        /* 👁‍🗨 Fade-in Effect */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 👣 Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #3A2E8E;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html">Αρχική</a>
+        <a href="categories.html">Κατηγορίες</a>
+        <a href="stories.html">Ιστορίες</a>
+        <a href="subscription.html">Συνδρομή</a>
+        <a href="#">Επικοινωνία</a>
+    </nav>
+
+    <!-- Story Header -->
+    <header class="story-header">
+        <h1>Η Ομίχλη του Μετρό - Επεισόδιο 1</h1>
+        <p class="author">By: StoryVerse</p>
+    </header>
+
+    <!-- Ιστορία -->
+    <section class="story-container fade-in">
+        <article class="story-content">
+            <p>Ο Ρίτσαρντ Μπένετ έριξε μια ματιά στο ελβετικό του ρολόι. Ήταν 23:45. Η τελευταία αμαξοστοιχία της νύχτας πλησίαζε στην αποβάθρα του σταθμού Μπέικερ Στριτ. Ανακουφισμένος που πρόλαβε το τρένο, μπήκε μέσα και έψαξε για μια θέση. Τα πόδια του πονούσαν από την εξαντλητική ημέρα, και η πλάτη του διαμαρτυρόταν από την κούραση. Το μόνο που ήθελε ήταν να φτάσει σπίτι και να πέσει για ύπνο.
+
+Καθώς το μετρό ξεκίνησε, παρατήρησε τους λίγους επιβάτες γύρω του. Κάποιοι διάβαζαν αφοσιωμένοι, ενώ άλλοι απλά κοιτούσαν αποχαυνωμένοι την οροφή του βαγονιού. Ο Ρίτσαρντ έγειρε το κεφάλι του πίσω και άφησε τη ρουτίνα του τρένου να τον νανουρίσει. Οι σταθμοί περνούσαν γρήγορα, και καθώς πλησίαζε στον προορισμό του, ένιωσε ένα ανεξήγητο ρίγος να διαπερνά τη σπονδυλική του στήλη.
+
+Η ανακοίνωση της επόμενης στάσης – «Κινγκς Κρος Σεντ Πάνκρας» – τον έκανε να σηκωθεί από τη θέση του και να πλησιάσει τις πόρτες. Μόλις το τρένο σταμάτησε, έκανε ένα βήμα έξω στην αποβάθρα. Αλλά κάτι δεν ήταν σωστό.
+
+Ο σταθμός ήταν εντελώς άδειος. Δεν υπήρχαν άλλοι επιβάτες, ούτε προσωπικό. Ο φωτισμός τρεμόπαιζε, δημιουργώντας παράξενες σκιές στους τοίχους. Ο Ρίτσαρντ γύρισε να κοιτάξει το τρένο, αλλά προς έκπληξή του, είχε εξαφανιστεί.
+
+Προχώρησε αργά προς την έξοδο, ανεβαίνοντας τις σκάλες. Κάθε του βήμα αντηχούσε απόκοσμα στον έρημο σταθμό. Όταν έφτασε στην επιφάνεια, σταμάτησε απότομα. Δεν βρισκόταν στο Λονδίνο.
+
+Αντί για φωτισμένους δρόμους και κίνηση, βρέθηκε στη μέση μιας δασωμένης περιοχής, καλυμμένης με παχιά ομίχλη. Δεν υπήρχε ψυχή ζωντανή. Μόνο το μακρινό ηχόχρωμα ενός τρένου που απομακρυνόταν…
+
+Ο Ρίτσαρντ έκανε ένα βήμα μπροστά, νιώθοντας την καρδιά του να χτυπά δυνατά. Πού βρισκόταν; Και πώς είχε επιστρέψει στον ίδιο συρμό από όπου ξεκίνησε;
+
+Ξαφνικά, ένα αχνό φως φάνηκε ανάμεσα στα δέντρα. Ένας ψίθυρος διέκοψε τη σιωπή. Δεν μπορούσε να καταλάβει τις λέξεις, αλλά η φωνή του φαινόταν γνώριμη. Διστακτικά, έκανε μερικά βήματα προς το φως, αναρωτώμενος αν έπρεπε να το ακολουθήσει ή να γυρίσει πίσω. Όμως, υπήρχε ακόμα σταθμός πίσω του;</p>
+            
+            
+
+            <p>Όταν έφτασε στην επιφάνεια, σταμάτησε απότομα. Δεν βρισκόταν στο Λονδίνο. Αντί για φωτισμένους δρόμους, βρέθηκε στη μέση μιας δασωμένης περιοχής, καλυμμένης με παχιά ομίχλη...</p>
+        </article>
+    </section>
+
+    <!-- Επόμενο Επεισόδιο -->
+    <div class="next-episode fade-in">
+        <a href="metro_story_ep2.html">Επόμενο Επεισόδιο →</a>
+    </div>
+
+    <footer>
+        <p>© 2025 StoryVerse | Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".fade-in");
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            elements.forEach(element => observer.observe(element));
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Επικοινωνία - StoryVerse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        nav {
+            background: #6C63FF;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #5548c8;
+            border-radius: 5px;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #6C63FF;
+            color: white;
+            transition: background 0.5s ease;
+        }
+        section {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            margin-top: 1rem;
+            background: #6C63FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #5548c8;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #333;
+            color: white;
+        }
+        .form-container {
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .form-container button {
+            background: #6C63FF;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+        .form-container button:hover {
+            background: #5548c8;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .contact-info p {
+            font-size: 1.1rem;
+        }
+        .contact-info a {
+            color: #6C63FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Αρχική</a>
+        <a href="categories.html">Κατηγορίες</a>
+        <a href="cooking.html">Μαγειρικά Tips</a>
+        <a href="stories.html">Ιστορίες</a>
+        <a href="subscription.html">Συνδρομή</a>
+        <a href="contact.html">Επικοινωνία</a>
+    </nav>
+
+    <header>
+        <h1>Επικοινωνήστε μαζί μας</h1>
+        <p>Εάν έχετε οποιεσδήποτε ερωτήσεις ή σχόλια, παρακαλούμε να μας ενημερώσετε!</p>
+    </header>
+
+    <section>
+        <div class="form-container">
+            <h2>Φόρμα Επικοινωνίας</h2>
+            <form action="mailto:alexsigma003@gmail.com" method="POST" enctype="text/plain">
+                <label for="name">Όνομα:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Μήνυμα:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Αποστολή Μηνύματος</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Άλλα Μέσα Επικοινωνίας</h2>
+            <p>Μπορείτε να επικοινωνήσετε μαζί μας και μέσω:</p>
+            <p><strong>Τηλέφωνο:</strong> <a href="tel:+306971604771">6971604771</a></p>
+            <p><strong>Email:</strong> <a href="mailto:alexsigma003@gmail.com">alexsigma003@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 StoryVerse | Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Μυστήριο - StoryVerse</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+        nav {
+            background: #6C63FF;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #5548c8;
+            border-radius: 5px;
+        }
+        header {
+            padding: 3rem 1rem;
+            background: #6C63FF;
+            color: white;
+        }
+        .story-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 2rem;
+        }
+        .story-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            width: 250px;
+            text-align: center;
+        }
+        .story-card:hover {
+            transform: scale(1.05);
+        }
+        .story-card a {
+            text-decoration: none;
+            color: #6C63FF;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 2rem;
+            background: #333;
+            color: white;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html">Αρχική</a>
+        <a href="categories.html">Κατηγορίες</a>
+        <a href="stories.html">Ιστορίες</a>
+        <a href="subscription.html">Συνδρομή</a>
+        <a href="#">Επικοινωνία</a>
+    </nav>
+
+    <header>
+        <h1>Κατηγορία: Μυστήριο</h1>
+        <p>Ανακάλυψε συναρπαστικές ιστορίες μυστηρίου γεμάτες αγωνία και ανατροπές!</p>
+    </header>
+
+    <section class="story-container" id="stories-list">
+        <!-- Οι ιστορίες θα προστεθούν δυναμικά μέσω JavaScript -->
+    </section>
+
+    <footer>
+        <p>© 2025 StoryVerse | Όλα τα δικαιώματα διατηρούνται.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Ιστορίες μυστηρίου
+            const stories = [
+                { title: "Η ομίχλη του μετρό", link: "#" },
+                { title: "Το Χαμένο Αρχείο", link: "#" },
+                { title: "Το Μυστήριο του Πύργου", link: "#" }
+            ];
+            
+            const storiesList = document.getElementById("stories-list");
+            stories.forEach(story => {
+                const storyCard = document.createElement("div");
+                storyCard.classList.add("story-card");
+                storyCard.innerHTML = `<h3>${story.title}</h3><a href="${story.link}">Διάβασε</a>`;
+                storiesList.appendChild(storyCard);
+            });
+        });
+    </script>
+</body>
+</html>
